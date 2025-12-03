@@ -126,129 +126,7 @@ body {
     min-height: calc(100vh - 400px);
 }
 
-/* Carousel */
-.carousel-section {
-    width: 99.5vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-}
-
-.carousel {
-    position: relative;
-    width: 100%;
-    background-color: var(--white);
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-slide {
-    display: none;
-    position: relative;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: 50vh; /* adjustable */
-    object-fit: cover;
-}
-
-.carousel-slide.active {
-    display: block;
-    opacity: 1;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.carousel-slide.active {
-    display: block;
-}
-
-.carousel-caption {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    color: var(--white);
-    padding: 40px 20px 20px;
-    text-align: center;
-}
-
-.carousel-caption h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.carousel-caption p {
-    font-size: 18px;
-}
-
-.carousel-prev,
-.carousel-next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: 45px;
-    height: 45px;
-    margin-top: -70px;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.3s ease;
-    border-radius: 50%;
-    background-color: white;
-    user-select: none;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.carousel-prev { left: 25px; }
-.carousel-next { right: 25px; }
-
-.carousel-prev:hover,
-.carousel-next:hover {
-    background-color: rgba(255,255,255,0.9);
-    transform: scale(1.1);
-}
-
-.carousel-indicators {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--white);
-}
-
-.indicator {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 5px;
-    background-color: var(--border-color);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.indicator.active {
-    background-color: var(--primary-color);
-}
-
-/* About PUP Section */
+/* About AXIS Section */
 .about-pup {
     background-color: var(--white);
     border-radius: 14px;
@@ -265,6 +143,7 @@ body {
 
 .about-content {
     flex: 1;
+    margin-left: 50px;
 }
 
 .about-pup h2 {
@@ -287,10 +166,11 @@ body {
 }
 
 .about-image img {
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     display: block;
+    float: right;
 }
 
 @media (max-width: 992px) {
